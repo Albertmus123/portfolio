@@ -20,8 +20,8 @@ export const HeroSection = () => {
         <img className='object object-cover' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVA_HrQLjkHiJ2Ag5RGuwbFeDKRLfldnDasw&usqp=CAU" alt="Albert"/>
     </div>
   </div>
-  <div className='grid justify-center'>
-    <h2 className='font-bold text-3xl'>Skills</h2>
+  <div className='grid justify-center py-8'>
+    <h2 className='font-bold text-3xl'>Frameworks</h2>
   </div>
   </>
   )
