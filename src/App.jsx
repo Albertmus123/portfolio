@@ -1,14 +1,17 @@
 import './App.css'
+import { Footer } from './Footer'
 import { HeroSection } from './HeroSection'
 import { Nav } from './Nav'
+import Skills from './Skills'
 
 function App() {
   return (
     <>
-  <div className="grid sticky top-0">
   <Nav />
-  </div>
   <HeroSection />
+  <Skills />
+  
+  <Footer />
   </>
   )
 }
