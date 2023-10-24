@@ -1,4 +1,5 @@
 import React from 'react'
+import imgProfile from './assets/Screenshot.png'
 
 export const HeroSection = () => {
   return (
@@ -17,7 +18,7 @@ export const HeroSection = () => {
         </div>
     </div>
     <div className='grid justify-center pt-2 lg:pt-24'>
-        <img className='object object-cover' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVA_HrQLjkHiJ2Ag5RGuwbFeDKRLfldnDasw&usqp=CAU" alt="Albert"/>
+        <img className='object object-cover w-80 h-70 rounded-full' src={imgProfile} alt="Albert"/>
     </div>
   </div>
   <div className='grid justify-center py-8'>
