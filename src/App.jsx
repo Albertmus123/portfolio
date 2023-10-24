@@ -1,10 +1,15 @@
 import './App.css'
+import { HeroSection } from './HeroSection'
+import { Nav } from './Nav'
 
 function App() {
   return (
     <>
-      <h1>Hello</h1>
-    </>
+  <div className="grid sticky top-0">
+  <Nav />
+  </div>
+  <HeroSection />
+  </>
   )
 }
 
