@@ -1,19 +1,20 @@
 import './App.css'
-import { Contact } from './Contact'
-import { Footer } from './Footer'
 import { HeroSection } from './HeroSection'
+import {Footer } from './Footer'
 import { Nav } from './Nav'
 import Skills from './Skills'
+import { Contact } from './Contact'
 
 function App() {
   return (
     <>
-  <Nav />
-  <HeroSection />
-  <Skills />
-  <Contact />
-  <Footer />
-  </>
+    <Nav />
+    <HeroSection />
+    <Skills />
+    <Contact />
+    <Footer />
+
+    </>
   )
 }
 

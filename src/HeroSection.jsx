@@ -2,6 +2,7 @@ import React from 'react'
 import imgProfile from './assets/Screenshot.png'
 
 export const HeroSection = () => {
+ 
   return (
     <>
   <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1'>
@@ -14,11 +15,12 @@ export const HeroSection = () => {
             <button 
             className='outline outline-2 outline-offset-4 outline-gray-400 hover:outline-sky-600 px-2'
             >Hire me ?</button>
-            <button className='outline outline-2 outline-offset-4 outline-gray-400 hover:outline-sky-600 px-2 ms-8'>See My Works</button>
+            <button
+            className='outline outline-2 outline-offset-4 outline-gray-400 hover:outline-sky-600 px-2 ms-8'>See My Works</button>
         </div>
     </div>
     <div className='grid justify-center pt-2 lg:pt-24'>
-        <img className='object object-cover w-80 h-70 rounded-full' src={imgProfile} alt="Albert"/>
+        <img className='object object-cover w-60 h-60 rounded-full' src={imgProfile} alt="Albert"/>
     </div>
   </div>
   <div className='grid justify-center py-8'>
