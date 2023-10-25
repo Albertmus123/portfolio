@@ -13,8 +13,8 @@ export const HeroSection = () => {
         <div className="btn-group pt-4">
             <button 
             className='outline outline-2 outline-offset-4 outline-gray-400 hover:outline-sky-600 px-2'
-            >Hire me for Development</button>
-            <button className='outline outline-2 outline-offset-4 outline-gray-400 hover:outline-sky-600 px-2 ms-8'>Contact Us</button>
+            >Hire me ?</button>
+            <button className='outline outline-2 outline-offset-4 outline-gray-400 hover:outline-sky-600 px-2 ms-8'>See My Works</button>
         </div>
     </div>
     <div className='grid justify-center pt-2 lg:pt-24'>
@@ -22,7 +22,7 @@ export const HeroSection = () => {
     </div>
   </div>
   <div className='grid justify-center py-8'>
-    <h2 className='font-bold text-3xl'>Frameworks</h2>
+    <h2 className='font-bold text-3xl'>Expert In</h2>
   </div>
   </>
   )
