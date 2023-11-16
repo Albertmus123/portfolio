@@ -7,14 +7,14 @@ import { Contact } from './Contact'
 
 function App() {
   return (
-    <>
+    <div className='bg-indigo-50'>
     <Nav />
     <HeroSection />
     <Skills />
     <Contact />
     <Footer />
 
-    </>
+    </div>
   )
 }
 

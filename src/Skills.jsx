@@ -1,64 +1,99 @@
-import {react, django,html5, python } from 'boxicons'
-
-const solutions = [
-  { name: 'Python', description: 'Get a better understanding of your traffic'},
-  { name: 'Django', description: 'Speak directly to your customers'},
-  { name: 'Fastapi', description: "Your customers' data will be safe and secure"},
-  { name: 'Html/Css/Javascript', description: 'Connect with third-party tools' },
-  { name: 'ReactJs', description: 'Build strategic funnels that will convert'},
-]
+import { FaReact } from "react-icons/fa6";
+import { TbBrandDjango } from "react-icons/tb";
+import { SiFastapi } from "react-icons/si";
 
 export default function Skills() {
   return (
- <div className="grid grid-cols-1 lg:grid-cols-4 px-2 lg:px-16 md:px-12 mt-8 gap-4">
-  <div className="card grid grid-cols-2 border-2 p-4">
-  <div className='grid justify-center py-4'>
-  <box-icon size="120px"  name='django' type='logo' ></box-icon>
-  </div>
-  <div className="card-body">
-    <h1 className='font-bold pb-4 text-xl text-sky-700'>Django</h1>
-      <p>
-      Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. 
-      </p>
-  </div>
-  </div>
-  
-  <div className="card grid grid-cols-2 border-2 p-4">
-  <div className='grid justify-center py-4'>
-  <box-icon size="120px" type='logo' name='react'></box-icon>
-  </div>
-  <div className="card-body">
-    <h1 className='font-bold pb-4 text-xl text-sky-700'>Reactjs</h1>
-      <p>
-      Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. 
-      </p>
-  </div>
-  </div>
-  
-  <div className="card grid grid-cols-2 border-2 p-4">
-  <div className='grid justify-center py-4'>
-    <img src="https://gitlab.com/uploads/-/system/project/avatar/33491624/fastapi.png" alt="fastapi" />
-  </div>
-  <div className="card-body">
-    <h1 className='font-bold pb-4 text-xl text-sky-700'>Fastapi</h1>
-      <p>
-      Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. 
-      </p>
-  </div>
-  </div>
-  
-  <div className="card grid grid-cols-2 border-2 p-4">
-  <div className='grid justify-center py-4'>
-  <box-icon size="120px" name='nodejs' type='logo' ></box-icon>
-  </div>
-  <div className="card-body">
-    <h1 className='font-bold pb-4 text-xl text-sky-700'>Nodejs</h1>
-      <p>
-      Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. 
-      </p>
-  </div>
-  </div>
-  
- </div>
+    <>
+
+    <div className="grid grid-cols-1 gap-12  md:grid-cols-2 lg:grid-cols-3 px-2 md:px-12 lg:px-12">
+    <div className="card 
+       px-4
+       pb-4
+       shadow 
+       shadow-md
+       hover:shadow-pink-500
+        hover:opacity-100 
+        opacity-70  
+        shadow-slate-700 
+        hover:translate-y-6 
+        transition
+         duration-500 
+         ease-in-out
+         bg-white
+        ">
+      <div className="card-body grid justify-center pt-4">
+        <span className="card-title">
+          <FaReact className="w-32 h-32 pb-2" />
+        </span>
+        <p className="card-text font-bold py-2">React Framework</p>
+      </div>
+      <div className="description">
+        <p className="card-text">
+          React is a JavaScript library for building user interfaces.
+          😄 ❤️ 🤴
+        </p>
+      </div>
+    </div>
+    <div className="card 
+        px-4
+        pb-4
+        shadow 
+        shadow-md
+        hover:shadow-pink-500
+         hover:opacity-100 
+         opacity-70  
+         shadow-slate-700 
+         hover:translate-y-6 
+         transition
+          duration-500 
+          ease-in-out
+          bg-white
+        ">
+      <div className="card-body grid justify-center pt-4">
+        <span className="card-title">
+          <TbBrandDjango className="w-32 h-32 pb-2" />
+        </span>
+        <p className="card-text font-bold py-2">Django Framework</p>
+      </div>
+      <div className="description">
+        <p className="card-text">
+          Django is an open source web application framework for Python.
+          😄 ❤️ ⚒️
+        </p>
+      </div>
+    </div>
+    <div className="card 
+      hover:shadow-pink-500
+      px-2 shadow 
+      shadow-md
+       hover:opacity-100 
+       opacity-70  
+       shadow-slate-700 
+       hover:translate-y-6 
+       transition
+        duration-500 
+        ease-in-out
+        bg-white
+        ">
+      <div className="card-body grid justify-center pt-4">
+        <span className="card-title">
+          <SiFastapi className="w-32 h-32 pb-2" />
+        </span>
+        <p className="card-text font-bold py-2">FastAPI Framework</p>
+      </div>
+      <div className="description">
+        <p className="card-text">
+        FastAPI is a modern, fast (high-performance), web framework for building APIs. <br />
+        ⏩ 💌
+        </p>
+      </div>
+      <div className="card-footer py-4">
+        
+      </div>
+
+    </div>
+    </div>
+    </>
   )
 }

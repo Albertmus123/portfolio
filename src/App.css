@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'Satisfy', cursive;
+    font-family: 'Sometype Mono', monospace;
+}

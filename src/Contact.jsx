@@ -38,8 +38,25 @@ export const Contact = () => {
 
         <div>
           <button
-            type="submit"
-            className="flex w-full justify-center rounded-md bg-sky-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="
+            border
+            border-slate-700
+            hover:border-pink-500
+            shadow
+            shadow-xl
+            py-2
+            opacity-60
+            hover:bg-slate-100
+            hover:opacity-100
+            hover:text-slate-900
+            hover:scale-105
+            w-full
+            transition
+            hover:transition
+            duration-500
+            ease-in-out
+            justify-self-center
+            "
           >
             Send Message
           </button>
