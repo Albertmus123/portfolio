@@ -5,8 +5,10 @@ export const HeroSection = () => {
   <div className="hero-content text-center">
     <div className="max-w-md">
       <h1 className="text-5xl font-bold">Hi? Am Albert</h1>
-      <p className="py-6">Provident cupiditate voluptatem et in. 
-      Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <p className="py-6">Web and Mobile application developer
+      We develop most helperful applications for web and mobile applications
+      hire us to acheive and customize your application for present and future use.
+      </p>
       <button
           className='
           border
