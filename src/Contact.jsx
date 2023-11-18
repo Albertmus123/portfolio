@@ -2,68 +2,63 @@ import React from 'react'
 
 export const Contact = () => {
   return (
-    <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-4">
-    <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-      <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-        Contact Us
-      </h2>
+    <>
+    <div className="grid justify-center pt-12">
+      <h1 className="text-2xl font-bold">Contact</h1>
+    </div>
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 px-4 py-12">
+     <div className="carousel w-full rounded-xl">
+
+        <div id="slide1" className="carousel-item relative w-full">
+          <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/06/Computer_programmer.jpeg.jpg" className="w-full" />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" className="btn btn-circle">❮</a> 
+            <a href="#slide2" className="btn btn-circle">❯</a>
+          </div>
+        </div>  
+      <div id="slide2" className="carousel-item relative w-full">
+        <img src="https://www.springboard.com/blog/wp-content/uploads/2022/08/programming-jobs-salaries.png" className="w-full" />
+        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" className="btn btn-circle">❮</a> 
+          <a href="#slide2" className="btn btn-circle">❯</a>
+        </div>
+      </div> 
     </div>
 
-    <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-      <form className="space-y-6" action="#" method="POST">
-        <div>
-        <label class="block">
-            <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-                Email
-            </span>
-            <input type="email" name="email" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
-            </label>
-        </div>
-        <div>
-        <label class="block">
-            <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-                Subject
-            </span>
-            <input type="text"  class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="subject..." />
-            </label>
-        </div>
-        <div>
-        <label class="block">
-            <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-                Message
-            </span>
-            <textarea rows={3} class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="message ...." />
-            </label>
-        </div>
-
-        <div>
+      <div className="contact-from px-4  lg:px-12 shadow shadow-xl py-2">
+         <div className="grid justify-center ">
+         <h1 className='font-bold py-4'>Mail Me 💌</h1>
+         </div>
+          <input type="text" placeholder="example@gmail.com" className="input w-full my-4" />
+          <input type="text" placeholder="subject ..." className="input w-full my-2" />
+          <textarea className="textarea w-full h-24 my-2" placeholder="message ..."></textarea>
           <button
-            className="
-            border
-            border-slate-700
-            hover:border-pink-500
-            shadow
-            shadow-xl
-            py-2
-            opacity-60
-            hover:bg-slate-100
-            hover:opacity-100
-            hover:text-slate-900
-            hover:scale-105
-            w-full
-            transition
-            hover:transition
-            duration-500
-            ease-in-out
-            justify-self-center
-            "
-          >
-            Send Message
-          </button>
-        </div>
-      </form>
+          className='
+          border
+          border-slate-700
+          hover:border-pink-500
+          shadow
+          shadow-xl
+          py-2
+          my-4
+          opacity-60
+          hover:bg-slate-100
+          hover:opacity-100
+          hover:text-slate-900
+          hover:scale-105
+          w-48
+          transition
+          hover:transition
+          duration-500
+          ease-in-out
+          justify-self-center
+          '
+          >Message 💟</button>
+
+
+      </div>
 
     </div>
-  </div>
+    </>
   )
 }

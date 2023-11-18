@@ -1,17 +1,13 @@
 import React from 'react'
-import Svg from './assets/male.svg'
-
 export const HeroSection = () => {
- 
   return (
-
-       <div className='grid justify-center px-2 pt-8'>
-       <h1  className='justify-self-center text-4xl py-12 font-bold opacity-60 hover:opacity-100'>Hi? Am Albert </h1>
-        <p className=' justify-self-center mb-4'><span className='ps-24 md:ps-96 lg:ps-96'>Web and Mobile Developer,</span> <br /> Here for your service
-          if need any application web or mobile 
-          We help you to  achieve your Business Goals .    
-          </p>
-          <button
+<div className="hero min-h-56 py-4">
+  <div className="hero-content text-center">
+    <div className="max-w-md">
+      <h1 className="text-5xl font-bold">Hi? Am Albert</h1>
+      <p className="py-6">Provident cupiditate voluptatem et in. 
+      Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <button
           className='
           border
           border-slate-700
@@ -33,14 +29,32 @@ export const HeroSection = () => {
           ease-in-out
           justify-self-center
           '
-          
+          onClick={()=>document.getElementById('my_modal_1').showModal()}
           >Hire me? 💟</button>
-
-          <div className='grid justify-center pt-4'> 
-          <img className='hover:scale-105 transition hover:transition duration-700 ease-in-out' src={Svg} alt="svg" width={400} height={400} srcset="" />
-          </div>
-          <h1 className='justify-self-center pb-12 text-2xl font-bold'>Skills</h1>
-       </div>
+        <dialog id="my_modal_1" className="modal max-h-42 md:max-h-screen lg:max-h-screen">
+          <div className="modal-box">
+            <h1 className='text-xl py-4'>Hire Form</h1>
+            <p>This form is submitted directly when Send Pressed ❤️</p>
+              <input type="text" placeholder="FullName ... 📁" className="input input-bordered input-md w-full my-4" />
+              <input type="text" placeholder="example@example.com ... 📝" className="input input-bordered input-md w-full my-4" />
+              <select className="select select-ghost w-full my-4">
+              <option disabled selected>Choose application</option>
+              <option>Web</option>
+              <option>Mobile</option>
+              <option>Windows</option>
+            </select>
+            <div className="modal-action">
+            <button className="btn bg-pink-400 hover:bg-pink-500 hover:text-slate-200 text-slate-100">Send</button>
+              <form method="dialog">
+        <button className="btn">Close</button>
+      </form>
+     
+    </div>
+  </div>
+</dialog>
+    </div>
+  </div>
+</div>
 
   )
 }

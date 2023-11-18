@@ -5,8 +5,10 @@ import { SiFastapi } from "react-icons/si";
 export default function Skills() {
   return (
     <>
-
-    <div className="grid grid-cols-1 gap-12  md:grid-cols-2 lg:grid-cols-3 px-2 md:px-12 lg:px-12">
+    <div className="grid justify-center pb-12">
+     <h1 className="text-xl font-bold"> Skills</h1>
+    </div>
+    <div className="grid grid-cols-1 gap-4  md:grid-cols-2 lg:grid-cols-4 px-2 md:px-12 lg:px-12">
     <div className="card 
        px-4
        pb-4
@@ -22,9 +24,9 @@ export default function Skills() {
          ease-in-out
          bg-white
         ">
-      <div className="card-body grid justify-center pt-4">
+      <div className="card-body grid justify-center">
         <span className="card-title">
-          <FaReact className="w-32 h-32 pb-2" />
+          <FaReact className="w-32 h-32" />
         </span>
         <p className="card-text font-bold py-2">React Framework</p>
       </div>
@@ -54,7 +56,7 @@ export default function Skills() {
         <span className="card-title">
           <TbBrandDjango className="w-32 h-32 pb-2" />
         </span>
-        <p className="card-text font-bold py-2">Django Framework</p>
+        <p className="card-text font-bold ">Django Framework</p>
       </div>
       <div className="description">
         <p className="card-text">
